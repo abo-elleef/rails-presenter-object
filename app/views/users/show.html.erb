@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_presentation.fetch :name %>
+</p>
+
+<p>
+  <strong>Eamil:</strong>
+  <%= @user_presentation.fetch :email %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(id: @user_presentation.fetch(:id)) %> |
+<%= link_to 'Back', users_path %>
