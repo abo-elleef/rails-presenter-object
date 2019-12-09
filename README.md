@@ -1,24 +1,17 @@
-# README
+# motivation 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+implement Presenter Object Design Pattern on New Rails 6 App 
 
-Things you may want to cover:
+# Steps 
+* replace any active record object with ruby pure hash 
+* pass only active reocrd object to build forms and nested forms 
+* pass all instance variables to presenter class to reformat active reocord object to pure ruby hash 
 
-* Ruby version
+Pros
+* we do not have any DB queries in view layer 
+* formating active recordd object moved to presenter instead of helper layer 
 
-* System dependencies
+Cons 
+* adding one more layer to rails architecture that need a little more work 
+* if you are not careful enough you might face circule dependancies 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
